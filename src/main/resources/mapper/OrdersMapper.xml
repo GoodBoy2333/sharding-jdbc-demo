@@ -62,4 +62,21 @@
     from orders
     where user_id=#{userId,jdbcType=INTEGER}
   </select>
+
+  <select id="findOneByUserId" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from orders
+    where user_id=#{userId,jdbcType=INTEGER}
+  </select>
+
+  <select id="findByUserIdOrId" resultMap="BaseResultMap">
+    select i.id,i.user_id
+    from orders o left join orders_item i on o.id=i.order_id
+    where o.user_id in (8,9)
+    <!--select o.id, o.user_id
+    from orders o left join orders_item i on o.id=i.order_id-->
+    <!--where o.user_id=#{userId,jdbcType=INTEGER}-->
+    <!--or id=#{id,jdbcType=BIGINT}-->
+  </select>
 </mapper>

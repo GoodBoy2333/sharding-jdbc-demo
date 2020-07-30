@@ -27,4 +27,9 @@ public interface OrdersService{
 
 
 
+	List<Orders> findByUserIdOrId(Integer userId,Long id);
+
+
+
+
 }

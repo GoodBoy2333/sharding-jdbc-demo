@@ -50,4 +50,10 @@ class ShardingJdbcDemoApplicationTests {
         System.out.println(byUserId);
     }
 
+    @Test
+    void contextLoads_05() {
+        List<Orders> byUserIdOrId = ordersService.findByUserIdOrId(null, null);
+        System.out.println(byUserIdOrId);
+    }
+
 }

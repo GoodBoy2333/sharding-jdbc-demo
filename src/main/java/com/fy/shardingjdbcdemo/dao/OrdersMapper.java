@@ -23,6 +23,10 @@ public interface OrdersMapper {
 
     List<Orders> findByUserId(@Param("userId")Integer userId);
 
+    Orders findOneByUserId(@Param("userId")Integer userId);
+
+    List<Orders> findByUserIdOrId(@Param("userId")Integer userId,@Param("id")Long id);
+
 
 
 

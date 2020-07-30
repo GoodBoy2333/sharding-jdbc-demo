@@ -54,6 +54,14 @@ public class OrdersServiceImpl implements OrdersService{
 		 return ordersMapper.findByUserId(userId);
 	}
 
+	@Override
+	public List<Orders> findByUserIdOrId(Integer userId,Long id){
+		 return ordersMapper.findByUserIdOrId(userId,id);
+	}
+
+
+
+
 
 
 
