@@ -27,7 +27,10 @@ public interface OrdersMapper {
 
     List<Orders> findByUserIdOrId(@Param("userId")Integer userId,@Param("id")Long id);
 
+    List<Orders> findByUserIdBetween(@Param("minUserId")Integer minUserId,@Param("maxUserId")Integer maxUserId);
 
+    Long countByUserId(@Param("userId")Integer userId);
 
+    Long countGroupByUserId(@Param("userId")Integer userId);
 
 }

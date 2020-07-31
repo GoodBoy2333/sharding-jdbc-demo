@@ -31,5 +31,16 @@ public interface OrdersService{
 
 
 
+	List<Orders> findByUserIdBetween(Integer minUserId,Integer maxUserId);
+
+
+
+	Long countByUserId(Integer userId);
+
+    Long countGroupByUserId(Integer userId);
+
+
+
+
 
 }

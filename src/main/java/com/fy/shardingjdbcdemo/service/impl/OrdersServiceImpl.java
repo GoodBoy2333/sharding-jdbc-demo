@@ -59,10 +59,19 @@ public class OrdersServiceImpl implements OrdersService{
 		 return ordersMapper.findByUserIdOrId(userId,id);
 	}
 
+	@Override
+	public List<Orders> findByUserIdBetween(Integer minUserId,Integer maxUserId){
+		 return ordersMapper.findByUserIdBetween(minUserId,maxUserId);
+	}
+
+	@Override
+	public Long countByUserId(Integer userId){
+		 return ordersMapper.countByUserId(userId);
+	}
 
 
-
-
-
-
+    @Override
+    public Long countGroupByUserId(Integer userId) {
+        return ordersMapper.countGroupByUserId(userId);
+    }
 }
