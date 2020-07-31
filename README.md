@@ -728,5 +728,3 @@ void contextLoads_07() {
 
 准备应用到项目之前，通读 [《ShardingSphere 文档》](https://shardingsphere.apache.org/document/current/cn/overview/) 。学习不全面，线上两行泪。
 
-代码地址：[GitHub](https://github.com/GoodBoy2333/sharding-jdbc-demo.git)
-
