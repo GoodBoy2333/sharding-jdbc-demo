@@ -726,5 +726,5 @@ void contextLoads_07() {
 | 7      | mall_1 | orders_3 |
 | 8      | mall_0 | orders_0 |
 
-准备应用到项目之前，通读 [《ShardingSphere 文档》](https://shardingsphere.apache.org/document/current/cn/overview/) 。学习不全面，线上两行泪。
+准备应用到项目之前，请通读 [《ShardingSphere 文档》](https://shardingsphere.apache.org/document/current/cn/overview/) 。学习不全面，线上两行泪。
 
